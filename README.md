@@ -18,13 +18,20 @@ It not only focuses on technical implementation but also emphasizes **collaborat
 
 ---
 
-## ⚙️ Tech Stack
-- **Backend Framework**: Django  
-- **Database**: MySQL  
-- **API Layer**: REST & GraphQL  
-- **Containerization**: Docker  
-- **CI/CD**: GitHub Actions (or similar)  
-- **Version Control**: Git & GitHub  
+## 🛠️ Technology Stack
+
+This project leverages modern technologies to build a scalable and secure booking platform.  
+Below is a breakdown of each technology and its role in the project:  
+
+- **Django**: A high-level Python web framework used to build the backend, handle business logic, and expose RESTful APIs.  
+- **MySQL**: A relational database system used to store and manage structured data such as users, bookings, and listings.  
+- **GraphQL**: A query language for APIs that enables efficient data fetching and allows clients to request exactly the data they need.  
+- **Docker**: A containerization platform that ensures consistent application environments across development, testing, and production.  
+- **Git & GitHub**: Version control and collaboration tools for managing project code, team workflows, and documentation.  
+- **GitHub Actions**: A CI/CD tool for automating testing, building, and deployment pipelines.  
+
+Each of these technologies contributes to creating a robust, secure, and collaborative development environment, mirroring real-world industry practices.
+ 
 
 ---
 
