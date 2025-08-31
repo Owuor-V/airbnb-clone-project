@@ -35,13 +35,38 @@ Each of these technologies contributes to creating a robust, secure, and collabo
 
 ---
 
-## 📌 Key Highlights
-- Hands-on GitHub repository setup & management  
-- Clear documentation of team roles and responsibilities  
-- Database design with real-world entity relationships  
-- Feature-driven development approach  
-- Secure API implementation  
-- CI/CD pipeline integration for automated deployment  
+## ✨ Feature Breakdown
+
+The Airbnb Clone project includes several core features that replicate real-world booking platform functionality.  
+Each feature plays a critical role in delivering a complete user experience while showcasing backend architecture, database design, and API integration.  
+
+### 1. User Management
+This feature allows users to register, log in, and manage their profiles securely.  
+It supports different roles (e.g., hosts and guests) and ensures authentication and authorization through secure API endpoints.  
+
+### 2. Property Management
+Hosts can list, update, and remove properties on the platform.  
+Each property includes essential details like title, description, location, pricing, and availability, making it easier for guests to browse and book.  
+
+### 3. Booking System
+Guests can book properties for specific dates while the system checks availability and prevents conflicts.  
+This feature ensures smooth reservation workflows and maintains booking records tied to both users and properties.  
+
+### 4. Review System
+Guests can leave reviews and ratings for properties after completing their stays.  
+This promotes trust and transparency within the platform while helping future guests make informed decisions.  
+
+### 5. Payment Integration
+A secure payment system is linked to bookings, allowing users to complete transactions.  
+It tracks payment status (pending, completed, failed) to ensure financial accountability within the application.  
+
+### 6. API Security
+The project implements security measures such as authentication tokens, role-based access, and input validation.  
+These safeguards ensure that sensitive data, bookings, and financial transactions remain protected.  
+
+### 7. CI/CD Integration
+With GitHub Actions (or similar tools), the project features automated pipelines for building, testing, and deployment.  
+This improves efficiency, reduces manual errors, and mirrors modern industry workflows.  
 
 ---
 
