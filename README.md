@@ -45,4 +45,76 @@ Each of these technologies contributes to creating a robust, secure, and collabo
 
 ---
 
+## 🗄️ Database Design
+
+The database is designed using a **relational model** to represent users, properties, bookings, reviews, and payments.  
+This structure ensures scalability, data integrity, and efficient queries.  
+
+### Key Entities
+
+1. **Users**
+   - `id` (Primary Key)
+   - `name`
+   - `email`
+   - `password`
+   - `role` (e.g., host, guest)
+   - **Relationships**:  
+     - A user can list multiple properties.  
+     - A user can make multiple bookings.  
+     - A user can leave multiple reviews.  
+
+2. **Properties**
+   - `id` (Primary Key)
+   - `title`
+   - `description`
+   - `location`
+   - `price_per_night`
+   - `host_id` (Foreign Key → Users)  
+   - **Relationships**:  
+     - A property belongs to a host (user).  
+     - A property can have multiple bookings.  
+     - A property can have multiple reviews.  
+
+3. **Bookings**
+   - `id` (Primary Key)
+   - `property_id` (Foreign Key → Properties)  
+   - `user_id` (Foreign Key → Users)  
+   - `check_in_date`
+   - `check_out_date`
+   - `status` (e.g., pending, confirmed, canceled)  
+   - **Relationships**:  
+     - A booking belongs to a property.  
+     - A booking is made by a user.  
+     - A booking is associated with a payment.  
+
+4. **Reviews**
+   - `id` (Primary Key)
+   - `property_id` (Foreign Key → Properties)  
+   - `user_id` (Foreign Key → Users)  
+   - `rating` (1–5 stars)
+   - `comment`
+   - **Relationships**:  
+     - A review belongs to a property.  
+     - A review is written by a user.  
+
+5. **Payments**
+   - `id` (Primary Key)
+   - `booking_id` (Foreign Key → Bookings)  
+   - `amount`
+   - `payment_method` (e.g., card, PayPal, M-Pesa)
+   - `status` (e.g., pending, completed, failed)  
+   - **Relationships**:  
+     - A payment is linked to a booking.  
+
+---
+
+### Entity Relationships Summary
+- A **User** can be a host (owning properties) or a guest (making bookings).  
+- A **Property** belongs to a host and can receive multiple bookings and reviews.  
+- A **Booking** is made by a user for a property and is tied to a payment.  
+- A **Review** links a user to a property with feedback.  
+- A **Payment** ensures financial transactions are recorded for bookings.  
+
+
+
 🚀 *This project is designed to help learners strengthen technical expertise, embrace teamwork, and deliver software solutions with care, clarity, and scalability.*  
