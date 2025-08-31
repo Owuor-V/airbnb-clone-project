@@ -138,8 +138,37 @@ This structure ensures scalability, data integrity, and efficient queries.
 - A **Property** belongs to a host and can receive multiple bookings and reviews.  
 - A **Booking** is made by a user for a property and is tied to a payment.  
 - A **Review** links a user to a property with feedback.  
-- A **Payment** ensures financial transactions are recorded for bookings.  
+- A **Payment** ensures financial transactions are recorded for bookings.
 
+---
 
+## 🔒 API Security
+
+Security is a critical component of the Airbnb Clone project, ensuring that user data, transactions, and system operations are safeguarded against threats.  
+The following key measures are implemented to protect the backend APIs:  
+
+### 1. Authentication
+- **What it does**: Ensures that only verified users can access the system by requiring secure login credentials and issuing authentication tokens (e.g., JWT).  
+- **Why it’s important**: Protects user accounts from unauthorized access and ensures that sensitive information like personal details and bookings remain private.  
+
+### 2. Authorization
+- **What it does**: Restricts access to resources based on user roles (e.g., host vs. guest).  
+- **Why it’s important**: Prevents users from performing unauthorized actions, such as a guest trying to delete a property they don’t own.  
+
+### 3. Rate Limiting
+- **What it does**: Controls the number of API requests a client can make within a given timeframe.  
+- **Why it’s important**: Protects the system from abuse, denial-of-service (DoS) attacks, and ensures fair usage among all users.  
+
+### 4. Input Validation & Data Sanitization
+- **What it does**: Validates and cleanses incoming data before processing it in the system.  
+- **Why it’s important**: Prevents common vulnerabilities like SQL injection, cross-site scripting (XSS), and corrupted data being stored in the database.  
+
+### 5. Secure Payments Handling
+- **What it does**: Encrypts and secures financial transactions linked to bookings.  
+- **Why it’s important**: Ensures payment integrity, prevents fraud, and protects users’ financial details.  
+
+---
+
+By combining these measures, the project maintains a secure environment for **users, properties, bookings, reviews, and payments**, aligning with industry best practices for scalable applications.  
 
 🚀 *This project is designed to help learners strengthen technical expertise, embrace teamwork, and deliver software solutions with care, clarity, and scalability.*  
